@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Bitcoin prices</title>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="mid_term.css">
+        <script async defer src="mid_term.js"></script>
+
+    </head>
+
+    <body>
+        <h1>Value of Bitcoin</h1>
+        
+        <label for="money-type">Current value</label>
+        <select id="money-type">
+            <option disabled selected value=""> Select type </option>  
+            <option name="money-type">EUR</option>
+            <option name="money-type">GBP</option>
+            <option name="money-type">USD</option>
+        </select>
+        <p id="money"></p>
+        
+        <h2>Value over the last month</h2>
+        
+        <canvas id="line-chart" width="800" height="500"></canvas>
+        
+    </body>
+</html>
